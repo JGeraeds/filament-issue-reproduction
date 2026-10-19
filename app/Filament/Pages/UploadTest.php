@@ -34,7 +34,7 @@ class UploadTest extends Page implements HasForms
             ->components([
                 FileUpload::make('upload')
                     ->label('Uploads')
-                    ->aboveContent('This field shows the ')
+                    ->aboveContent('This field shows the issue regarding deletion')
                     ->disk('local')
                     ->directory('uploads')
                     ->preserveFilenames()
@@ -62,6 +62,7 @@ class UploadTest extends Page implements HasForms
 
                 FileUpload::make('uploads_2')
                     ->label('Uploads 2 preview')
+                    ->aboveContent('This field shows the issue regarding naming')
                     ->disk('local')
                     ->directory('uploads')
                     ->preserveFilenames()
